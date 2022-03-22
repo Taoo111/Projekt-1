@@ -7,6 +7,7 @@
 body {
   font-size: 62.5%;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
 }
 
 /*Navigation styles START*/
@@ -31,7 +32,6 @@ header {
   align-items: center;
   width: 100%;
   height: 13vh;
-  background-color: #f7f7f7;
 }
 
 .main-nav ul {
@@ -173,7 +173,7 @@ div.main-note p {
 }
 
 .slide img {
-  transform: scale(1,1.2);
+  transform: scale(1, 1.2);
   min-width: 100%;
   min-height: 100%;
   transition: transform 0.3s ease-in-out;
@@ -221,26 +221,101 @@ div.main-note p {
     cursor: pointer;
   }
 
-  .main-nav{
+  .main-nav {
     position: absolute;
     width: 100vw;
     top: 6.5rem;
     left: 0;
     z-index: 1;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
   }
 
-  .main-nav ul{
+  .main-nav ul {
     display: none;
     flex-direction: column;
   }
 
-  .main-nav ul.active{
+  .main-nav ul.active {
     display: flex;
   }
 
-  .main-nav ul li{
+  .main-nav ul li {
     margin: 1.5rem 0;
     text-align: center;
   }
+}
+
+/*Contact form section*/
+section.contact {
+  display: flex;
+  justify-content: space-around;
+  text-align: flex-start;
+  margin: 2rem 0;
+}
+
+section div.contact-text h1 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+section div.contact-text h2 {
+  font-size: 1.4rem;
+  border-bottom: 1px solid;
+  padding-bottom: 2px;
+  letter-spacing: 1px;
+}
+
+section div#frmContact {
+  font-size: 1rem;
+}
+
+#frmContact {
+  border-top: #f0f0f0 2px solid;
+  background: #faf8f8;
+  padding: 10px;
+}
+#frmContact div {
+  margin-bottom: 15px;
+}
+#frmContact div label {
+  margin-left: 5px;
+}
+.demoInputBox {
+  padding: 10px;
+  border: #f0f0f0 1px solid;
+  border-radius: 4px;
+}
+.error {
+  background-color: #ff6600;
+  border: #aa4502 1px solid;
+  padding: 5px 10px;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.success {
+  background-color: #12cc1a;
+  border: #0fa015 1px solid;
+  padding: 5px 10px;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.info {
+  font-size: 0.8em;
+  color: #ff6600;
+  letter-spacing: 2px;
+  padding-left: 5px;
+}
+.btnAction {
+  background-color: #2fc332;
+  border: 0;
+  padding: 10px 40px;
+  color: #fff;
+  border: #f0f0f0 1px solid;
+  border-radius: 4px;
+}
+
+.btnAction:hover{
+  border: 1px solid #000;
 }

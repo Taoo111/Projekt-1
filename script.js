@@ -90,17 +90,19 @@ function setPositionByIndex() {
 
 /*JQuery*/
 
-$(".hamburger").click(function(){
+$(".hamburger").click(function () {
   $(".main-nav ul").toggleClass("active");
-})
+});
 
 $(document).ready(function () {
-  $('.Offers').click(function (event) {
-      event.preventDefault();
+  $(".Offers").click(function (event) {
+    event.preventDefault();
 
-      $('body, html').animate({
-          scrollTop: $("main").offset().top
-      }, 600);
-
-  })
+    $("body, html").animate(
+      {
+        scrollTop: $("main").offset().top,
+      },
+      600
+    );
+  });
 });
