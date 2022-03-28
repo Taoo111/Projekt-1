@@ -125,7 +125,7 @@ header {
 /*Main START*/
 
 div.main-note {
-  margin: 2rem 30% 0.5rem 40%;
+  margin: 2rem 20% 2rem 40%;
   height: 10vh;
 }
 
@@ -299,6 +299,8 @@ footer p.description{
   width: 30vw;
   display: inline-block;
   margin: 0.3rem 6rem;
+  font-size: 1.3rem;
+  text-align: justify;
 }
 
 footer div.footer-social{
@@ -324,6 +326,7 @@ footer div.footer-social ul li a{
 footer .copyright{
   font-size: 1.2rem;
   font-weight: bold;
+  letter-spacing: 1.4px;
 }
 
 
@@ -360,5 +363,62 @@ footer .copyright{
   .main-nav ul li {
     margin: 1.5rem 0;
     text-align: center;
+  }
+
+  .hTags {
+    position: absolute;
+    top: 6%;
+    left: 3%;
+    text-align: left;
+  }
+
+  div.main-note {
+    margin: 2rem 20% 3.4rem 40%;
+  }
+
+  .slide{
+    transform: scale(1, 0.8);
+  }
+}
+
+@media screen and (min-width:760px) and (max-width:865px){
+  .hTags {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    text-align: left;
+  }
+  
+  div.main-note {
+    margin: 2rem 20% 3rem 40%;
+  }
+
+  .slide{
+    transform: scale(1, 0.8);
+  }
+}
+
+@media screen and (max-width:550px){
+  .hTags {
+    position: absolute;
+    top: 4%;
+    left: center;
+    text-align: center;
+  }
+
+  .hTags h3{
+    display: none;
+  }
+  
+  .hTags button{
+    margin-top: 1.5rem;
+  }
+
+  div.main-note {
+    margin: 2rem 20% 4rem 40%;
+  }
+
+  .slide{
+    transform: scale(1, 0.7);
   }
 }
