@@ -210,41 +210,6 @@ div.main-note p {
   background-color: none;
 }
 
-@media screen and (max-width: 760px) {
-  .hamburger {
-    position: absolute;
-    display: block;
-    left: 47%;
-  }
-
-  .hamburger:hover {
-    cursor: pointer;
-  }
-
-  .main-nav {
-    position: absolute;
-    width: 100vw;
-    top: 6.5rem;
-    left: 0;
-    z-index: 1;
-    background-color: #f7f7f7;
-  }
-
-  .main-nav ul {
-    display: none;
-    flex-direction: column;
-  }
-
-  .main-nav ul.active {
-    display: flex;
-  }
-
-  .main-nav ul li {
-    margin: 1.5rem 0;
-    text-align: center;
-  }
-}
-
 /*Contact form section*/
 section.contact {
   display: flex;
@@ -318,4 +283,82 @@ section div#frmContact {
 
 .btnAction:hover{
   border: 1px solid #000;
+}
+
+/*FOOTER SECTION*/
+footer {
+  background-color: #f7f7f7;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer p.description{
+  width: 30vw;
+  display: inline-block;
+  margin: 0.3rem 6rem;
+}
+
+footer div.footer-social{
+  margin: 1rem 0;
+}
+
+footer div.footer-social ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+footer div.footer-social ul li{
+  font-size: 1rem;
+  margin: 0 1rem;
+}
+
+footer div.footer-social ul li a{
+  color: #000;
+}
+
+footer .copyright{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 760px) {
+  .hamburger {
+    position: absolute;
+    display: block;
+    left: 47%;
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+  }
+
+  .main-nav {
+    position: absolute;
+    width: 100vw;
+    top: 6.5rem;
+    left: 0;
+    z-index: 1;
+    background-color: #f7f7f7;
+  }
+
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .main-nav ul.active {
+    display: flex;
+  }
+
+  .main-nav ul li {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
 }
